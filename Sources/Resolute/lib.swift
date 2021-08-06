@@ -21,7 +21,7 @@ public class Screens {
     displays.forEach { display in display.setScale(scale) }
   }
 
-  var savedModes = [Int]()
+  public internal(set) var savedModes = [Int]()
 
   public func saveCurrentMode() {
     savedModes = displays.map { display in display.modeIndex }
