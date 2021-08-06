@@ -17,7 +17,7 @@ public class Screens {
     displays = displayIDs[0...Int(displayCount - 1)].map { Display($0) }
   }
 
-  func setScale(_ scale: Int) {
+  public func setScale(_ scale: Int) {
     displays.forEach { display in display.setScale(scale) }
   }
 
