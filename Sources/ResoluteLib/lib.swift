@@ -1,11 +1,11 @@
 import Cocoa
 
-class Screens {
+public class Screens {
   static let MAX_DISPLAYS = 8
   let maxDisplays = MAX_DISPLAYS
   let displays: [Display]
 
-  init() {
+  public init() {
     var displayCount: UInt32 = 0
     var displayIDs = [CGDirectDisplayID](repeating: 0, count: maxDisplays)
 
@@ -33,7 +33,7 @@ class Screens {
     }
   }
 
-  func listDisplays() -> [String] {
+  public func listDisplays() -> [String] {
     displays.enumerated().map { "\($1.displayString("\($0)"))" }
   }
 
