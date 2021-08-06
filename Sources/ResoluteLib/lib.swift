@@ -23,11 +23,11 @@ public class Screens {
 
   var savedModes = [Int]()
 
-  func saveCurrentMode() {
+  public func saveCurrentMode() {
     savedModes = displays.map { display in display.modeIndex }
   }
 
-  func restoreSavedMode() {
+  public func restoreSavedMode() {
     for (display, mode) in zip(displays, savedModes) {
       display.setMode(with: mode)
     }
