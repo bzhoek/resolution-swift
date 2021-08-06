@@ -6,19 +6,19 @@ import PackageDescription
 let package = Package(
   name: "Resolute",
   products: [
-    .library(name: "Resolute", targets: ["ResoluteLib"]),
+    .library(name: "Resolute", targets: ["Resolute"]),
     .executable(name: "resolute", targets: ["ResoluteCli"])
   ],
   dependencies: [],
   targets: [
     .target(
-      name: "ResoluteLib",
+      name: "Resolute",
       dependencies: []),
     .target(
       name: "ResoluteCli",
-      dependencies: ["ResoluteLib"]),
+      dependencies: ["Resolute"]),
     .testTarget(
       name: "ResoluteTests",
-      dependencies: ["ResoluteLib"]),
+      dependencies: ["Resolute"]),
   ]
 )

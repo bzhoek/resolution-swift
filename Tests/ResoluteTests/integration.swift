@@ -1,5 +1,5 @@
 import XCTest
-@testable import ResoluteLib
+@testable import Resolute
 
 class ScreenResolutionTest: XCTestCase {
 

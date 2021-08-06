@@ -1,3 +1,3 @@
-import ResoluteLib
+import Resolute
 
 print(Screens().listDisplays())
