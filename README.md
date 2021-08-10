@@ -9,6 +9,8 @@ Add a `NSPrincipal` key to `Info.plist` for the test target, like below. Then ad
 <string>Resolute.TestObserver</string>
 ```
 
+NOTE: The target name, in this case `Resolute`, [may not contain a hyphen](https://stackoverflow.com/a/67023389/10326604).
+
 The [XCTestObservation implementation](Sources/Resolute/test_helper.swift) runs once [before and after](https://medium.com/quality-engineering-university/xcuitests-test-listeners-f09cdb35164b) *all* tests.
 
 ## Package Manager
