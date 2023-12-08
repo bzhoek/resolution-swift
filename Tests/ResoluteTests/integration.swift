@@ -17,4 +17,9 @@ class ScreenResolutionTest: XCTestCase {
     XCTAssertEqual([0], screens.savedModes)
   }
 
+  func testScale() {
+    let scale = NSScreen.main?.backingScaleFactor
+    XCTAssertEqual(scale, 1)
+  }
+
 }
